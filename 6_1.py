@@ -13,11 +13,12 @@ class Parallelepiped():
     def get_square_side(self, edge, height):
         print(edge * height)
 
-    def info(self):
+    @staticmethod
+    def info():
         print('Методы, доступные в этом классе:\n'
-              'get_volume()\n'
-              'get_square_base()\n'
-              'get_square_side()\n')
+            'get_volume()\n'
+            'get_square_base()\n'
+            'get_square_side()\n')
 
 
 box = Parallelepiped(3, 4, 7)
